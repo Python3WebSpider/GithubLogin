@@ -1,3 +1,3 @@
-GitHub Login
+Github Login
 
-Login GitHub with Requests
+Login Github with Requests
