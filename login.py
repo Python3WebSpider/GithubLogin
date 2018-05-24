@@ -17,7 +17,7 @@ class Login(object):
     def token(self):
         response = self.session.get(self.login_url, headers=self.headers)
         selector = etree.HTML(response.text)
-        token = selector.xpath('//div/input[2]/@value')
+        token = selector.xpath('//div//input[2]/@value')
         return token
     
     def login(self, email, password):
